@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: Roboto,sans-serif;
+}
+img{
+  height: 100%;
+  width: 100%;
+}
+@import "grid";
+@import "colors";
+@import "tagsDefine";
+@import "class";
+
+nav{
+  background-color: #ffffff;
+  height: 3rem;
+  text-align: center;
+  padding-top: 1rem;
+  position: fixed;
+  z-index: 100;
+}
+#menu-movil{
+  .col{
+    background-color: #ffffff;
+  }
+}
+
+.s3{
+  img{
+    margin: 1.5em 0;
+  }
+}

@@ -1,0 +1,50 @@
+.logo{
+  height:1.4rem;
+}
+.movil-menu{
+    position: relative;
+  }
+
+.MethodPodcast{
+  padding-bottom: 3rem;
+  position: relative;
+  top: 3rem;
+}
+.margin-text{
+  margin: 1rem;
+}
+.info{
+  color: $grey-darck;
+  font-weight: bold;
+}
+.text{
+  color: $light-grey;
+  height: 6.3rem;
+  overflow: hidden;
+  font-size: 1.1rem;
+}
+.line-blue{
+  background-color: $blue;
+  height: 6px !important;
+  margin: 1rem;
+}
+.more-news{
+  padding: 1rem;
+}
+.more-news a{
+  color: $blue;
+}
+.date{
+  margin: 2rem 1rem 1rem;
+}
+.date-news{
+  margin: 1em 0;
+}
+.text-new{
+  @extend .text;
+  height: 5rem;
+}
+.up-to-date{
+  background: #F1F3F4;
+  padding: 1rem;
+}

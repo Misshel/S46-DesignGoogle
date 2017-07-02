@@ -1,0 +1,43 @@
+.container{
+  width: 100%;
+  margin: 0 auto;
+}
+
+[class^=row]{
+  .col{
+    float:left;
+    height:auto;
+    box-sizing: border-box;
+  }
+}
+
+$cols : 12;
+$col-width : 100%/$cols;
+$col-margin : 100%/$cols;
+$breakpoints : (s : 0, m : 768px, l : 992px, xl : 1200px );
+@function col-width($col){
+  @return $col-width*$col;
+}
+
+@mixin col($media, $min-width){
+  @media (min-width:$min-width){
+    @for $i from 1 through $cols {
+      .#{$media}#{$i} {
+        width: col-width($i);
+      }
+    }
+  }
+}
+@mixin margin($media, $min-width){
+  @media (min-width:$min-width){
+    @for $i from 1 through $cols {
+      .#{$media}#{$i} {
+        margin-left: col-width($i);
+      }
+    }
+  }
+}
+@each $name, $width in $breakpoints {
+  @include col($name, $width);
+  @include margin(offset-#{$name}, $width);
+}
